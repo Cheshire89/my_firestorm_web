@@ -1,0 +1,111 @@
+@import 'variables';
+@import 'gradients';
+@import 'mixins';
+
+.event-header{
+	margin-top:-265px;
+	@media (max-width: 990px){
+		margin-top:-15px;
+	}
+	>div {
+		/*height: 277px;*/
+		@media (max-width: 990px){
+		  height:auto;
+		}
+	}
+	
+	.event-pic{
+		overflow: hidden;
+		position: relative;
+		height: inherit;
+		img{
+			width: 100%;
+			object-fit: cover;
+			vertical-align: middle;
+
+		}
+	}
+	.event-details{
+		background-color: rgba(255,255,255,0.9);
+		height: 100%;
+		.wrapper{
+			padding: 15px;
+			height: 100%;
+		}
+	}
+}
+
+
+.cover-img{
+	margin-top:-15px;
+	height: 350px;
+	overflow: hidden;
+	.img-holder{
+		height: 100%;
+		img{
+			width: 100%;
+			margin-top:-20%;
+		}
+	}
+}
+
+.tags{
+	li{
+		a{
+			color: $fs-d-grey;
+			&:hover, &:focus, &:active{
+				color: $fs-orange;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.event-details{
+	a{
+		color:$fs-orange;
+		&:hover, &:focus, &:active{
+			color: darken($fs-orange, 15%);
+			text-decoration: none;
+		}
+	}
+
+	.price{
+		font-size: 1.5em;
+		color: darken($fs-orange, 25%);
+		margin-top: 45%;
+		@media (max-width: 990px){
+			margin-top: 3%;
+		}
+	}
+}
+
+.ticket{
+	@media (max-width: 990px){
+	    text-align:right;
+	}
+}
+
+.event-actions{
+	@media (max-width: 990px){
+	    border-top:2px solid $fs-orange;
+	}
+}
+
+.sponsors{
+	display: table;
+	position: relative;
+	a{
+		opacity: 0.7;
+		@include transition-s(opacity, 0.1s, ease-in-out);
+		&:hover{
+			opacity: 1;
+		}
+	}
+	img{
+		max-height: 30px;
+		display: table-cell;
+		vertical-align: middle;
+		
+	}
+}

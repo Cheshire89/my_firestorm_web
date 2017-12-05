@@ -1,0 +1,11 @@
+@mixin orange-gradient(){
+  background-image: -moz-linear-gradient( -90deg, rgb(255,141,57) 0%, rgb(210,104,25) 100%) !important;
+  background-image: -webkit-linear-gradient( -90deg, rgb(255,141,57) 0%, rgb(210,104,25) 100%) !important;
+  background-image: -ms-linear-gradient( -90deg, rgb(255,141,57) 0%, rgb(210,104,25) 100%) !important;
+}
+
+@mixin grey-gradient(){
+  background-image: -moz-linear-gradient( -90deg, rgb(255,243,234) 0%, rgb(182,179,177) 100%) !important;
+  background-image: -webkit-linear-gradient( -90deg, rgb(255,243,234) 0%, rgb(182,179,177) 100%) !important;
+  background-image: -ms-linear-gradient( -90deg, rgb(255,243,234) 0%, rgb(182,179,177) 100%) !important;
+}

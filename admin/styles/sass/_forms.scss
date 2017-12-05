@@ -1,0 +1,324 @@
+input[type="file"]{
+	display: none;
+}
+$activeColor: #27ae60; //green
+$darkenColor: darken($activeColor, 20%);
+/* $background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/13460/dark_wall.png'); */
+$background: #3498db;
+
+.fs-form-gen{
+	.form-group{
+		label{
+			text-align: left;
+			font-family: $fs-gen-font;
+			font-weight: 400;
+			color: darken($fs-orange, 5%);
+			
+			font-size: 1em;
+		}
+		textarea{
+			min-height: 150px !important;
+			resize: vertical;
+		}
+		.form-control{
+			border-radius: 0px;
+			border:1px solid $fs-form-b;
+			   color: $fs-brown;
+			   font-family: $fs-gen-font;
+			   font-weight: 400;
+			   &:focus{
+			   	 outline:none;
+			   	 box-shadow: none;
+			   }
+		}
+
+		.input-group{
+			margin-right: 15px;
+
+			@media (max-width: 767px){
+				margin-bottom: 15px;
+				margin-right: 0px;
+			}
+/*			@media (max-width: 767px){
+				margin-right: 0px;
+			}
+*/
+			.input-group-addon{
+				min-width:50px;
+				@include orange-gradient();
+				color:$fs-white;
+				border:1px solid $fs-orange;
+					&:hover, &:focus, &:active, &:active:focus{
+						@include grey-gradient();
+						color:$fs-orange;
+					}
+				.form-control{
+					::-webkit-input-placeholder {
+						color: $fs-brown;
+					   font-family: $fs-gen-font;
+					   font-weight: 400;  
+					}
+
+					::-moz-placeholder {  /* Firefox 19+ */
+					   color: $fs-brown;
+					   font-family: $fs-gen-font;
+					   font-weight: 400;  
+					}
+
+					:-ms-input-placeholder {  
+					   color: $fs-brown;
+					   font-family: $fs-gen-font;
+					   font-weight: 400;  
+					}
+				}
+			}
+		}
+	}
+	.form-group.controls{
+		@media (max-width: 767px){
+			margin-top:10px;
+		}
+	}
+}
+
+.form-horizontal.fs-form-gen{
+	.form-group{
+		.input-group{
+			margin-right: 0px;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.help-block{
+	text-align: left;
+	font-size:0.8em;
+}
+
+.form-inline.fs-form-gen, .form-horizontal.fs-form-gen{
+	position: relative;
+	margin-bottom: 0px;
+	.form-group.has-error{
+		.input-group{
+			margin-bottom: 2px;
+			.help-block{
+				font-size: 0.9em;
+			}
+			.input-group-addon{
+				@include red-gradient-over;
+			}
+		}
+		.form-control{
+			border: 1px solid $fs-red;
+		}
+	}
+
+		.form-group{
+/*			>[class*='col-'], >[class^="col-"]{
+				@media (max-width: 990px){
+					margin-bottom:15px;
+				}
+			}*/
+		
+		@media (max-width: 767px){
+			display:block;
+			
+		}
+
+
+
+		.input-group{
+			/*width: 80%;*/
+			label{
+			   border-radius: 0px;
+			   border:1px solid $fs-form-b;
+			   color: $fs-brown;
+			   text-transform: uppercase;
+			   font-family: $fs-gen-font;
+			   font-weight: 400;
+			   display: table-cell;
+			   margin-top:0px;
+			   float: none;
+			   font-size: inherit;
+			   height:34px;
+			   padding:6px 12px;
+			   overflow: hidden;
+			   white-space: nowrap;
+			   text-overflow: ellipsis;
+			   max-width: 250px;
+			   @media (max-width: 768px){
+			   			white-space: normal;
+			   }
+			}
+			input[type="file"]{
+				display: none;
+				&:active:focus + .input-group-addon{
+					@include grey-gradient();
+						color:$fs-orange;
+				}
+			}
+			.form-control{
+				&:focus + .input-group-addon{
+					@include grey-gradient();
+						color:$fs-orange;
+				}
+				::-webkit-input-placeholder {
+						color: $fs-brown;
+					   text-transform: uppercase;
+					   font-family: $fs-gen-font;
+					   font-weight: 400;  
+					}
+
+					::-moz-placeholder {  /* Firefox 19+ */
+					   color: $fs-brown;
+					   text-transform: uppercase;
+					   font-family: $fs-gen-font;
+					   font-weight: 400;  
+					}
+
+					:-ms-input-placeholder {  
+					   color: $fs-brown;
+					   text-transform: uppercase;
+					   font-family: $fs-gen-font;
+					   font-weight: 400;  
+					}
+			}
+		}
+		.btn{
+			/*margin-bottom:15px;*/
+		}
+	
+
+	}
+	
+}
+
+.form-inline .form-group{
+	@media (min-width: 768px){
+		margin-bottom: 10px !important;
+	}
+}
+
+.on-page-menu{
+		position: relative;
+		margin-top:-50px;
+		background-color: rgba(255,255,255,0.95);
+		box-shadow: 0px 0px 4.75px 0.25px rgba(34, 34, 34, 0.75);
+		@media (max-width: 767px){
+			margin-top:0;
+		}
+
+	.form-inline, .form-horizontal{
+		padding-top: 35px;
+		padding-bottom: 35px;
+		
+
+		[class*='col-'], [class^="col-"]{
+		    .form-control{
+			    margin-bottom: 15px;
+			}
+			.no-margin{
+				margin-bottom: 0px;
+			}
+		}
+
+		
+			::-webkit-input-placeholder {
+				color: $fs-brown;
+			   text-transform: uppercase;
+			   font-family: $fs-gen-font;
+			   font-weight: 400;  
+			}
+
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: $fs-brown;
+			   text-transform: uppercase;
+			   font-family: $fs-gen-font;
+			   font-weight: 400;  
+			}
+
+			:-ms-input-placeholder {  
+			   color: $fs-brown;
+			   text-transform: uppercase;
+			   font-family: $fs-gen-font;
+			   font-weight: 400;  
+			}
+			.fs-btn-orange{
+				border-radius: 8px;
+			}
+		
+	}
+}
+
+.on-page-menu.offset-menu{
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 25px;
+	z-index: 1;
+
+}
+
+
+.radio-btns{
+	input{
+		display: none;
+		&:checked + label:after{
+			opacity:1;
+		}
+	}
+
+	label{
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		&:before{
+			content:'';
+			display: inline-block;
+			vertical-align: middle;
+			width: 20px;
+			height: 20px;
+			border-radius: 20px;
+			background:$fs-orange;
+			margin-right: 5px;
+			@include transition(all 250ms $ease-out-quart);
+		}
+
+		&:after{
+			content:'';
+			display: inline-block;
+			vertical-align: middle;
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 20px;
+			background:white;
+			left: 25px;
+			top:16px;
+			opacity: 0;
+			@include transition(all 250ms $ease-out-quart);
+		}
+		&:hover{
+			&:after{
+				opacity:0.7;
+			}
+		}
+	}
+}
+
+.clickable-row, .editable-row{
+	cursor: pointer;
+	&:hover{
+		background-color:lighten($fs-orange,47%) !important;
+	}
+}
+
+.form-group > [class*='col-'],
+.form-group > [class^="col-"] {
+	    @media (max-width: 990px){
+	    	margin-bottom:10px !important;
+	    }
+	}
+
+
+
+

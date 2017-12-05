@@ -1,0 +1,40 @@
+@mixin transition-s($what, $time, $type){
+	$extentions:'-webkit-','-moz-','-o-','';
+	@each $ext in $extentions{
+		#{$ext}transition: #{$what} #{$time} #{$type};
+	}
+}
+
+@mixin rotate($deg){
+	$extentions:'-webkit-','-moz-','-o-','';
+	@each $ext in $extentions{
+		#{$ext}transform: rotate(#{$deg});
+	}
+}
+
+@mixin bg-cover(){
+    $extentions:'-webkit-','-moz-','-o-','';
+    @each $ext in $extentions{
+        #{$ext}background-size: cover;;
+    }
+}
+
+@mixin triangle-b($color:$fs-white){
+	border-top: 10px solid $fs-white;
+    border-left: 13px solid transparent; 
+    border-right: 13px solid transparent; 
+    bottom: -6px;
+    content: "";
+    position: absolute;
+    left: 35%;
+    /*margin-left: -21px;*/
+    width: 0; 
+    height: 0;
+    @media (max-width: 767px){
+    	border:0px;
+    }
+}
+
+@mixin btn-shadow(){    
+  box-shadow: 0px 0px 4.75px 0.25px rgba(34, 34, 34, 0.75);
+}

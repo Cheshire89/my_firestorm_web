@@ -1,0 +1,220 @@
+.profile-header > div {
+  /*@media (min-width: 990px){
+  	height: 277px ;
+  }
+  @media (max-width: 767px){
+  	height: auto;
+  }*/ }
+.profile-header .profile-img.edit {
+  padding: 15px;
+  width: 250px;
+  height: 250px !important;
+  margin: auto;
+  padding: 15px !important;
+  margin-top: 0px !important; }
+  .profile-header .profile-img.edit img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #d36a1d; }
+.profile-header .cover-img.edit img {
+  height: 130px;
+  margin-top: 5%; }
+.profile-header .cover-img.edit label {
+  margin-bottom: 20px; }
+
+.profile.on-page-nav {
+  margin-top: 0px; }
+
+.company-details #compName {
+  font-size: 1.2em; }
+.company-details p a {
+  color: #d36a1d; }
+
+.expertise-list li {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .expertise-list li:before {
+    font-family: 'FontAwesome';
+    content: '\f111';
+    color: #d36a1d;
+    margin-right: 8px;
+    font-size: 0.7em;
+    display: inline-block;
+    vertical-align: middle; }
+
+.profile-header.edit .profile-img img {
+  width: 164px;
+  height: 164px;
+  object-fit: cover;
+  object-position: center center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+.profile-header.edit .profile-details {
+  height: 214px;
+  padding: 15px; }
+.profile-header.edit .fs-form-gen > .form-group:first-child {
+  margin-bottom: 0px; }
+  @media (max-width: 990px) {
+    .profile-header.edit .fs-form-gen > .form-group:first-child {
+      height: auto; } }
+.profile-header.edit .fs-form-gen .btns {
+  background-color: rgba(255, 255, 255, 0.9); }
+  @media (max-width: 990px) {
+    .profile-header.edit .fs-form-gen .btns {
+      padding-bottom: 25px; } }
+  .profile-header.edit .fs-form-gen .btns .fs-btn-orange {
+    margin-top: 5px;
+    margin-bottom: 12px; }
+
+.profile-details {
+  height: 100%; }
+  .profile-details > .row {
+    height: 100%; }
+    .profile-details > .row > [class*='col-'], .profile-details > .row [class^="col-"] {
+      position: relative;
+      height: 100%; }
+      .profile-details > .row > [class*='col-'] .member, .profile-details > .row [class^="col-"] .member {
+        font-weight: 400; }
+  .profile-details .fs-header {
+    font-weight: 400; }
+
+.position-details > .row:first-child {
+  margin-top: 20px; }
+.position-details > .row:not(:first-child) {
+  margin-top: 10px; }
+
+.result-boxes {
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 25px; }
+  .result-boxes:last-child {
+    margin-bottom: 25px; }
+
+.groups li {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #373737;
+  margin-top: 5px;
+  margin-right: 5px; }
+  .groups li .badge.badge-danger {
+    color: #FFF;
+    background-color: #d9534f;
+    float: right;
+    margin-top: 1px; }
+    .groups li .badge.badge-danger:hover {
+      cursor: pointer; }
+  .groups li a {
+    color: #d36a1d;
+    padding: 8px; }
+    .groups li a:hover, .groups li a:active, .groups li a:focus {
+      color: #904814;
+      text-decoration: none; }
+
+.groups.edit li {
+  border-radius: 0px;
+  padding-left: 10px;
+  color: #d36a1d;
+  cursor: pointer;
+  border-color: #d36a1d;
+  width: 100%;
+  vertical-align: middle; }
+  .groups.edit li span {
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 5px; }
+  .groups.edit li .input-group-addon {
+    padding: 0px;
+    border: 0px; }
+    .groups.edit li .input-group-addon button {
+      color: white;
+      padding: 0px;
+      margin: 0px;
+      border: 0px; }
+    .groups.edit li .input-group-addon button i {
+      padding: 5px 5px; }
+    .groups.edit li .input-group-addon .fa-pencil {
+      background-color: #2983FF;
+      width: inherit;
+      height: inherit; }
+    .groups.edit li .input-group-addon .fa-times {
+      background-color: tomato; }
+
+.primary i {
+  font-size: 1.5em;
+  color: green; }
+
+.form-control {
+  margin-bottom: 0px !important; }
+
+label {
+  margin-top: 10px;
+  margin-bottom: 15px; }
+
+#payZip {
+  margin-top: 15px; }
+
+.form-container {
+  display: none; }
+
+@media (max-width: 768px) {
+  #payCardYear {
+    margin-top: 15px; } }
+@media (max-width: 990px) {
+  #payZip {
+    margin-top: 0px; } }
+#addChapter, #editExpertise {
+  background-color: white;
+  border-top: 2px solid #d36a1d;
+  border-bottom: 2px solid #d36a1d;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: none; }
+
+.referals .referal {
+  border-bottom: 2px solid #d36a1d; }
+  .referals .referal > [class*='col-'], .referals .referal [class^="col-"] {
+    min-height: 150px; }
+    @media (max-width: 990px) {
+      .referals .referal > [class*='col-'], .referals .referal [class^="col-"] {
+        min-height: 0px; } }
+    .referals .referal > [class*='col-']:nth-of-type(odd), .referals .referal [class^="col-"]:nth-of-type(odd) {
+      background-color: #ebebeb; }
+      @media (max-width: 990px) {
+        .referals .referal > [class*='col-']:nth-of-type(odd), .referals .referal [class^="col-"]:nth-of-type(odd) {
+          background-color: transparent; } }
+  .referals .referal .header > h4 {
+    min-height: 35px; }
+    @media (max-width: 990px) {
+      .referals .referal .header > h4 {
+        min-height: 0px; } }
+  .referals .referal .content {
+    min-height: 55px;
+    display: table; }
+    @media (max-width: 990px) {
+      .referals .referal .content {
+        min-height: 0px;
+        display: block; } }
+    .referals .referal .content p {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.3em; }
+      @media (max-width: 990px) {
+        .referals .referal .content p {
+          min-height: 0px;
+          display: block; } }
+    .referals .referal .content img {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      display: block; }
+
+.contact-info a {
+  color: #a65317; }
+  .contact-info a:hover, .contact-info a:focus, .contact-info a:active, .contact-info a:active:focus {
+    color: #d36a1d;
+    text-decoration: none; }
+
+/*# sourceMappingURL=profile.css.map */

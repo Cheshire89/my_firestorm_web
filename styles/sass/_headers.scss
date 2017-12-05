@@ -1,0 +1,33 @@
+.fs-header{
+	color:$fs-orange;
+	font-family: $fs-gen-font;
+	font-weight: 300;
+	.fs-strong{
+		font-weight: 700;
+	}
+}
+
+.fs-header-white{
+	@extend .fs-header;
+	color:$fs-white;
+}
+
+.fs-header-black{
+	@extend .fs-header;
+	color:$fs-d-grey;
+}
+
+.fs-header-brown{
+	@extend .fs-header;
+	color:$fs-brown;
+	display:inline-block; 
+	line-height:35px;
+	font-weight: 400;
+
+		&:hover, &:active, &:focus{
+			text-decoration:none;
+			color: $fs-orange;
+		}
+	
+}
+

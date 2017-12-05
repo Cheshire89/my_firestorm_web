@@ -1,0 +1,98 @@
+.table-container{
+	margin-top: 25px;
+	margin-bottom: 35px;
+}
+
+.fs-table{
+	thead{
+		@include orange-gradient();
+		@include btn-shadow();
+		color:$fs-white;
+		font-family: $fs-gen-font;
+		font-weight: 400;
+		tr{
+			th{
+				cursor: pointer
+			}
+		}
+	}
+	tbody{
+		font-family: $fs-gen-font;
+		tr{
+			.primary{
+				
+			}
+			td{
+				vertical-align: middle;
+				label {
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+
+					&:before{
+						content:'';
+						display: inline-block;
+						vertical-align: middle;
+						width: 20px;
+						height: 20px;
+						border-radius: 5px;
+						background:$fs-orange;
+						@include transition(all 250ms $ease-out-quart);
+					}
+
+					&:after{
+						content: '\2714';
+						display: inline-block;
+						color: $fs-white;
+						margin-left: -19px;
+						margin-top: 2px;
+						opacity: 0;
+						@include transition(all 250ms $ease-out-quart);
+					}
+
+					&:hover{
+						cursor: pointer;
+						&:before{
+							background:darken($fs-orange,2%);
+						}
+						&:after{
+							opacity: 0.7;
+						}
+						
+					}
+
+				}
+					input{
+						display: none;
+						&:checked + label:after{
+							opacity:1;
+						}
+					}
+				a{
+					display: inline-block;
+					font-weight: 400;
+					color:$fs-brown;
+					text-transform: uppercase;
+					&:hover, &:active, &:focus{
+						text-decoration:none;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+.table-striped.fs-table>tbody{
+
+	>tr:nth-of-type(odd){
+		background-color:$fs-white;
+	}
+	>tr:nth-of-type(even){
+		background-color: #fbeee6;
+		td a{
+			color:#80736b;
+		}
+	}
+}

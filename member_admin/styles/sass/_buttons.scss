@@ -1,0 +1,146 @@
+
+
+.fs-btn-orange{
+	border-radius: 20px;
+	color:$fs-white !important;
+	border:0;
+	font-weight: 700;
+	font-family: $fs-gen-font;
+		@include orange-gradient();
+		@include btn-shadow();
+		@include transition-s(all, 0.1s, ease-in-out);
+		border:1px solid $fs-orange;
+	&:hover, &:focus, &:active, &:active:focus{
+		@include grey-lbtn-gradient();
+		color: lighten($fs-orange,5%) !important;
+		border:1px solid darken($fs-white, 30%) !important;
+		outline:none;
+	}
+}
+
+.fs-btn-red{
+	border-radius: 20px;
+	color:$fs-white !important;
+	border:0;
+	font-weight: 700;
+	font-family: $fs-gen-font;
+		@include red-gradient();
+		/*@include btn-shadow();*/
+		@include transition-s(all, 0.1s, ease-in-out);
+		border:1px solid $fs-red;
+	&:hover, &:focus, &:active, &:active:focus{
+		color: $fs-red !important;
+		@include grey-l-gradient();
+		border:1px solid darken($fs-red, 30%) !important;
+		outline:none;
+	}
+}
+
+.fs-btn-blue{
+	border-radius: 20px;
+	color:$fs-white !important;
+	border:0;
+	font-weight: 700;
+	font-family: $fs-gen-font;
+		@include blue-gradient();
+		/*@include btn-shadow();*/
+		@include transition-s(all, 0.1s, ease-in-out);
+		border:1px solid $fs-blue;
+	&:hover, &:focus, &:active, &:active:focus{
+		color: $fs-blue !important;
+		@include grey-l-gradient();
+		border:1px solid darken($fs-blue, 10%) !important;
+		outline:none;
+	}
+}
+
+.fs-btn-green{
+	border-radius: 20px;
+	color:$fs-white !important;
+	border:0;
+	font-weight: 700;
+	font-family: $fs-gen-font;
+		@include green-gradient();
+		/*@include btn-shadow();*/
+		@include transition-s(all, 0.1s, ease-in-out);
+		border:1px solid $fs-green;
+	&:hover, &:focus, &:active, &:active:focus{
+		color: $fs-green !important;
+		@include grey-l-gradient();
+		border:1px solid darken($fs-green, 10%) !important;
+		outline:none;
+	}
+}
+
+
+.fs-btn-grey{
+	border-radius: 35px;
+	color:$fs-orange;
+	border:0;
+	font-weight: 700;
+	font-family: $fs-gen-font;
+	
+
+		@include grey-gradient();
+		@include btn-shadow();
+		@include transition-s(all, 0.1s, ease-in-out);
+		
+	&:hover, &:focus, &:active, &:active:focus{
+		outline:none;
+		
+		
+		color: darken($fs-white,5%) !important;
+		@include orange-gradient();
+		border:1px solid darken($fs-orange, 10%) !important;
+	}
+}
+
+.fs-ico-btn{
+	padding: 0px;
+	margin: 5px;
+	font-size: 2em;
+	background-color: transparent;
+	color:transparent;
+	border:0;
+	i{
+		@include orange-gradient();
+		-webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+	}
+	&:hover, &:active, &:focus, &:active:focus{
+		background-color: transparent;
+		outline:none;
+		box-shadow: none;
+		-webkit-box-shadow:none;
+		i{
+
+			@include grey-gradient();
+		}
+	}
+}
+
+.fs-ticket-btn{
+	@extend .fs-btn-orange;
+	border-radius: 10px;
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.members{
+	padding-top:20px;
+	padding-bottom: 20px;
+	margin-bottom: 35px;
+}
+
+.btn-group.block{
+	.btn{
+		display: block;
+		width: 100%;
+		border-radius: 0px;
+	}
+}
+
+

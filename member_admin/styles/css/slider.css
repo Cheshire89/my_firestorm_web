@@ -1,0 +1,30 @@
+.slider, .hero-img {
+  position: relative; }
+  .slider .slider-navigation, .hero-img .slider-navigation {
+    position: absolute;
+    top: 3.5vw;
+    width: 100%;
+    background-color: rgba(149, 149, 149, 0.45); }
+    .slider .slider-navigation h1, .hero-img .slider-navigation h1 {
+      color: #fff;
+      font-size: 4vw;
+      font-weight: 300;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      margin-top: 10px; }
+  .slider .arrows, .hero-img .arrows {
+    position: absolute;
+    width: 100%;
+    top: 0; }
+    .slider .arrows > span, .hero-img .arrows > span {
+      color: white;
+      font-size: 7vw;
+      cursor: pointer; }
+      .slider .arrows > span:hover, .hero-img .arrows > span:hover {
+        color: #d36a1d; }
+    .slider .arrows #left, .hero-img .arrows #left {
+      float: left; }
+    .slider .arrows #right, .hero-img .arrows #right {
+      float: right; }
+
+/*# sourceMappingURL=slider.css.map */

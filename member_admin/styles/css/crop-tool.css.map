@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAS;EACJ,OAAO,EAAE,IAAI;EACb,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,GAAG,EAAC,CAAC;EACL,IAAI,EAAC,CAAC;EACN,gBAAgB,EAAE,wBAAqB",
+"sources": ["../sass/crop-tool.scss"],
+"names": [],
+"file": "crop-tool.css"
+}

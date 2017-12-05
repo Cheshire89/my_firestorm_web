@@ -1,0 +1,44 @@
+.fs-header{
+	color:$fs-orange;
+	font-family: $fs-gen-font;
+	font-weight: 300;
+	.fs-strong{
+		font-weight: 700;
+	}
+}
+
+.fs-header-white{
+	@extend .fs-header;
+	color:$fs-white;
+}
+
+.fs-header-black{
+	@extend .fs-header;
+	color:$fs-d-grey;
+	font-weight: 400;
+}
+
+.fs-header-brown{
+	@extend .fs-header;
+	color:$fs-brown;
+	display:inline-block; 
+	line-height:35px;
+	font-weight: 400;
+
+		&:hover, &:active, &:focus{
+			text-decoration:none;
+			color: $fs-orange;
+		}
+	
+}
+
+.fs-form-header{
+	@extend .fs-header;
+	@include orange-gradient;
+	color:$fs-white;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	margin-top: 0px;
+}
+

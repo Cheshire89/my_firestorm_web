@@ -1,0 +1,119 @@
+@import 'variables';
+@import 'gradients';
+@import 'mixins';
+    .slider{
+      width: 1000%;
+      padding-left: 0px;
+      padding-right: 15px;
+    }
+    .slider,.hero-img{
+      height: 450px;
+      position: relative;
+      overflow: hidden;
+      display: block;
+      .slide{
+            display: inline;
+            float: left;
+            position: relative;
+            width: 102vw;
+            @media (max-width: 768px){
+              width: 104vw;
+            }
+            height: 100%;
+            img{
+              height: 100%;
+              object-fit: cover;
+              object-position: center center;
+            }
+
+            > [class*='col-'],  > [class^="col-"]{
+              position: absolute;
+              top:21%;
+              @media (max-width: 768px){
+                top:32%;
+              }
+
+              >.row{  
+                  background-color: rgba(149,149,149,0.45);
+                  height: inherit;
+                  z-index: 1;
+                > [class*='col-'],  > [class^="col-"]{
+                    h1{
+                      color: $fs-white;
+                      font-size: 6em;
+                      @media (max-width: 768px){
+                        font-size: 4em;
+                      }
+                      font-weight: 300;
+                      padding-top: 5%;
+                      padding-bottom: 5%;
+                      margin:10px 0px;
+                      
+                      width: 100%;
+                    }
+                }
+              }
+            }
+      }
+
+     
+
+    }
+
+    .slider-nav-cont{
+      position: absolute;
+        top: 10%;
+        z-index: 400;
+        width: 100%;
+        @media (max-width: 1200px){
+          top:8%;
+        }
+        @media (max-width: 990px){
+          top:7.5%;
+        }
+
+        @media (max-width: 768px){
+          top: 8.75%;
+        }
+    }
+    .slider-navigation{
+        height: inherit;
+        background-color: transparent;
+        z-index: 300;
+        >div{
+          @media (max-width: 990px){
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
+        }
+        
+      }
+
+      .arrows{
+        position: relative;
+        width: 100%;
+        float: left;
+        top:0;
+        >span{
+          color:white;
+          font-size: 10em;
+          @media (max-width: 768px){
+            font-size:6em;
+          }
+          cursor:pointer;
+          &:hover{
+            color: $fs-orange;
+          }
+        }
+        
+        #left{
+          float:left;
+
+        }
+        #right{
+          float: right;
+          
+        }
+      }
+
+    

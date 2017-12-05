@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'gradients';
+@import 'mixins';
+
+    .slider,.hero-img{
+      position: relative;
+      .slider-navigation{
+        position: absolute;
+        top:3.5vw;
+        width: 100%;
+        background-color: rgba(149,149,149,0.45);
+        h1{
+          color: $fs-white;
+          font-size: 4vw;
+          font-weight: 300;
+          padding-top: 2vw;
+          padding-bottom: 2vw;
+          margin-top: 10px;
+        }
+      }
+
+      .arrows{
+        position: absolute;
+        width: 100%;
+        top:0;
+        >span{
+          color:white;
+          font-size: 7vw;
+          cursor:pointer;
+          &:hover{
+            color: $fs-orange;
+          }
+        }
+        
+        #left{
+          float:left;
+
+        }
+        #right{
+          float: right;
+          
+        }
+      }
+    }
+
+    
+
+    

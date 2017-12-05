@@ -1,0 +1,89 @@
+.slider {
+  width: 1000%;
+  padding-left: 0px;
+  padding-right: 15px; }
+
+.slider, .hero-img {
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  display: block; }
+  .slider .slide, .hero-img .slide {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 102vw;
+    height: 100%; }
+    @media (max-width: 768px) {
+      .slider .slide, .hero-img .slide {
+        width: 104vw; } }
+    .slider .slide img, .hero-img .slide img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center center; }
+    .slider .slide > [class*='col-'], .slider .slide > [class^="col-"], .hero-img .slide > [class*='col-'], .hero-img .slide > [class^="col-"] {
+      position: absolute;
+      top: 21%; }
+      @media (max-width: 768px) {
+        .slider .slide > [class*='col-'], .slider .slide > [class^="col-"], .hero-img .slide > [class*='col-'], .hero-img .slide > [class^="col-"] {
+          top: 32%; } }
+      .slider .slide > [class*='col-'] > .row, .slider .slide > [class^="col-"] > .row, .hero-img .slide > [class*='col-'] > .row, .hero-img .slide > [class^="col-"] > .row {
+        background-color: rgba(149, 149, 149, 0.45);
+        height: inherit;
+        z-index: 1; }
+        .slider .slide > [class*='col-'] > .row > [class*='col-'] h1, .slider .slide > [class*='col-'] > .row > [class^="col-"] h1, .slider .slide > [class^="col-"] > .row > [class*='col-'] h1, .slider .slide > [class^="col-"] > .row > [class^="col-"] h1, .hero-img .slide > [class*='col-'] > .row > [class*='col-'] h1, .hero-img .slide > [class*='col-'] > .row > [class^="col-"] h1, .hero-img .slide > [class^="col-"] > .row > [class*='col-'] h1, .hero-img .slide > [class^="col-"] > .row > [class^="col-"] h1 {
+          color: #fff;
+          font-size: 6em;
+          font-weight: 300;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin: 10px 0px;
+          width: 100%; }
+          @media (max-width: 768px) {
+            .slider .slide > [class*='col-'] > .row > [class*='col-'] h1, .slider .slide > [class*='col-'] > .row > [class^="col-"] h1, .slider .slide > [class^="col-"] > .row > [class*='col-'] h1, .slider .slide > [class^="col-"] > .row > [class^="col-"] h1, .hero-img .slide > [class*='col-'] > .row > [class*='col-'] h1, .hero-img .slide > [class*='col-'] > .row > [class^="col-"] h1, .hero-img .slide > [class^="col-"] > .row > [class*='col-'] h1, .hero-img .slide > [class^="col-"] > .row > [class^="col-"] h1 {
+              font-size: 4em; } }
+
+.slider-nav-cont {
+  position: absolute;
+  top: 10%;
+  z-index: 400;
+  width: 100%; }
+  @media (max-width: 1200px) {
+    .slider-nav-cont {
+      top: 8%; } }
+  @media (max-width: 990px) {
+    .slider-nav-cont {
+      top: 7.5%; } }
+  @media (max-width: 768px) {
+    .slider-nav-cont {
+      top: 8.75%; } }
+
+.slider-navigation {
+  height: inherit;
+  background-color: transparent;
+  z-index: 300; }
+  @media (max-width: 990px) {
+    .slider-navigation > div {
+      padding-left: 15px !important;
+      padding-right: 15px !important; } }
+
+.arrows {
+  position: relative;
+  width: 100%;
+  float: left;
+  top: 0; }
+  .arrows > span {
+    color: white;
+    font-size: 10em;
+    cursor: pointer; }
+    @media (max-width: 768px) {
+      .arrows > span {
+        font-size: 6em; } }
+    .arrows > span:hover {
+      color: #d36a1d; }
+  .arrows #left {
+    float: left; }
+  .arrows #right {
+    float: right; }
+
+/*# sourceMappingURL=slider.css.map */
